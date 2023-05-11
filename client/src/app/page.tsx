@@ -3,7 +3,7 @@ import Sidebar from './components/Sidebar'
 
 const Home = () => {
   return (
-    <main className="">
+    <main className={`bg-black text-white flex w-[100%] mx-auto min-h-screen`}>
       <Sidebar />
     </main>
   )

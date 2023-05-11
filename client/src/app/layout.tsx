@@ -1,5 +1,33 @@
 import "./globals.css";
 import { Inter } from "next/font/google";
+import React from "react";
+import { configureStore } from "@reduxjs/toolkit";
+import { Provider } from "react-redux";
+import {
+  persistStore,
+  persistReducer,
+  FLUSH,
+  REHYDRATE,
+  PAUSE,
+  PERSIST,
+  PURGE,
+  REGISTER,
+} from "redux-persist";
+import storage from "redux-persist/lib/storage";
+import { PersistGate } from "redux-persist/integration/react";
+import globalReducer from "./state/index";
+
+const persistConfig = { key: "bant_2", storage, version: 2 };
+const persistedReducer = persistReducer(persistConfig, globalReducer);
+const store = configureStore({
+  reducer: persistedReducer,
+  middleware: (getDefaultMiddleware) =>
+    getDefaultMiddleware({
+      serializableCheck: {
+        ignoredActions: [FLUSH, REHYDRATE, PAUSE, PERSIST, PURGE, REGISTER],
+      },
+    }),
+});
 
 const inter = Inter({ subsets: ["latin"] });
 
