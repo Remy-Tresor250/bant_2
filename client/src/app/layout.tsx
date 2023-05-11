@@ -15,6 +15,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
+      <head>
+        <title>Bant</title>
+        <link rel="shortcut icon" href="./favicon.svg" type="image/x-icon" />
+      </head>
       <body className={inter.className}>{children}</body>
     </html>
   )
