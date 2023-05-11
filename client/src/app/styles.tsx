@@ -1,4 +1,4 @@
-const styles: object = {
+const styles = {
   flexBetween: "flex justify-between items-center",
   flexColBetween: "flex flex-col justify-between items-center",
   flexCenter: "flex justify-center items-center",
