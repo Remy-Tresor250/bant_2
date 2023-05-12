@@ -32,8 +32,8 @@ const store = configureStore({
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
-  title: "Natter",
-  description: "Natter Web Chat Application",
+  title: "Click Shop",
+  description: "Click Shop e-commerce website",
 };
 
 export default function RootLayout({

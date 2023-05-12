@@ -1,10 +1,11 @@
-import "@fortawesome/fontawesome-svg-core/styles.css";
+// import "@fortawesome/fontawesome-svg-core/styles.css";
+import styles from "./styles";
 
 
 const Home = () => {
   return (
-    <main className={`bg-black text-white flex w-[100%] mx-auto min-h-screen`}>
-
+    <main className={`bg-lightGray w-[100%] h-[100%] ${styles.flexCenter}`}>
+      
     </main>
   )
 }
