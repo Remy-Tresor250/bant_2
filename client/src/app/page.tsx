@@ -1,5 +1,6 @@
-import styles from './styles'
 import Sidebar from './components/Sidebar'
+import "@fortawesome/fontawesome-svg-core/styles.css";
+
 
 const Home = () => {
   return (

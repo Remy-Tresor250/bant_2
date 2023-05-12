@@ -32,8 +32,8 @@ const store = configureStore({
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
-  title: "Bant",
-  description: "Bant Web Chat Application",
+  title: "Natter",
+  description: "Natter Web Chat Application",
 };
 
 export default function RootLayout({

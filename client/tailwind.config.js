@@ -23,6 +23,7 @@ module.exports = {
         modGray: "#747679",
         darkGray: "#a8a8a8",
         modRed: "#d63030",
+        modDarkBlue: "#313f51",
       },
       fontFamily: {
         poppins: ["Poppins", "sans-serif"],

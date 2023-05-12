@@ -7,10 +7,10 @@
 main, body, html {
   height: 100%;
   width: 100%;
-  font-family: "Poppins", sans-serif;
+  font-family: "Lexend Deca", sans-serif;
 }
 
 .hover-logo:hover {
   background-color: #141414;
-  border-radius: 50%;
+  border-radius: 10rem;
 }
